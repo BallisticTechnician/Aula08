@@ -1,5 +1,14 @@
 
 public class Funcoes {
+	
+	public static boolean login(String usuario,String senha) {
+		if (usuario.equalsIgnoreCase("comprador")&&senha.equalsIgnoreCase("123")) {
+			return true;
+		}
+		return false;
+		
+	}
+	
 	public static void somarCarrinho(double[] produtos) {
 		double soma = 0;
 		for(int i=0; i<produtos.length;i++) {
